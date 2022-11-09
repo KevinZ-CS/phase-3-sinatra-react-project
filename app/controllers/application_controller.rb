@@ -33,5 +33,11 @@ class ApplicationController < Sinatra::Base
     exercise.to_json
   end
 
+  patch '/exercise/:id' do
+    exercise = Exercise.find(params[:id])
+    exercise.update(complete: params[:complete])
+    exercise.to_json
+  end
+
 
 end
