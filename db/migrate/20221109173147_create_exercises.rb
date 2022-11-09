@@ -8,5 +8,6 @@ class CreateExercises < ActiveRecord::Migration[6.1]
       t.integer :category_id
       t.timestamps
       t.boolean :complete
+    end
   end
 end

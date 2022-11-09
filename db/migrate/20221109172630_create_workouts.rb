@@ -8,6 +8,6 @@ class CreateWorkouts < ActiveRecord::Migration[6.1]
       t.integer :category_id
       t.boolean :complete
       t.timestamps
-    
+    end
   end
 end
