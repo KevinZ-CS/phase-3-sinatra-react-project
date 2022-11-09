@@ -45,5 +45,12 @@ class ApplicationController < Sinatra::Base
     exercise.to_json
   end
 
+  delete '/:id' do
+    category = Category.find(params[:id])
+    category.destroy
+    category.exercises.destroy_all
+    category.to_json
+  end
+
 
 end
