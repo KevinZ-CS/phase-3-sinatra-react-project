@@ -14,5 +14,12 @@ class ApplicationController < Sinatra::Base
     exercise.to_json
   end
 
+  post '/' do
+    category = Category.find_or_create_by(
+      category: params[:category]
+    )
+    category.to_json
+  end
+
 
 end
