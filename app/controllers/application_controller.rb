@@ -21,5 +21,17 @@ class ApplicationController < Sinatra::Base
     category.to_json
   end
 
+  post '/:id' do
+    exercise = Exercise.create(
+      exercise: params[:exercise],
+      weight: params[:weight],
+      sets: params[:sets],
+      reps: params[:reps],
+      category_id: params[:category_id],
+      complete: false
+      )
+    exercise.to_json
+  end
+
 
 end
