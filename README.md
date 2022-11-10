@@ -19,7 +19,9 @@ To run the server, run:
 ```
 rake server
 ```
+Repo for the front-end can be found at this link:
 
+https://github.com/KevinZ-CS/phase-3-sinatra-react-project-front-end
 
 ## Usage
 The features of this application include:
